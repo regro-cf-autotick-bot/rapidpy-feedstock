@@ -1,6 +1,6 @@
 {% set name = "RAPIDpy" %}
-{% set version = "2.4.3" %}
-{% set sha256 = "0532d32641b03128102894f01e73a6baac0dda187850bfb8b6f38e90a49ab6fe" %}
+{% set version = "2.5.0" %}
+{% set sha256 = "b98cf76fd4a5592cc8e5e99cebee050244d37ad715823f9f1f3ce5e64ae02cf9" %}
 
 package:
   name: {{ name|lower }}
@@ -26,13 +26,14 @@ requirements:
     - netcdf4
     - numpy
     - pandas
+    - pangaea
     - pyproj
     - python-dateutil
     - pytz
-    - shapely
-    - scipy
     - requests
     - rtree
+    - shapely
+    - scipy
 
 test:
   imports:
