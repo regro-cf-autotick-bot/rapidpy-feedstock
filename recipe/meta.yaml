@@ -1,6 +1,6 @@
 {% set name = "RAPIDpy" %}
-{% set version = "2.5.1" %}
-{% set sha256 = "854c851c29283977d710f26b25a345528eda13903d4e399efe67b17d0f775d4c" %}
+{% set version = "2.5.2" %}
+{% set sha256 = "b24f5245befd45c72829019b9d3026999ac67f020ae2489841abdc507c9efa52" %}
 
 package:
   name: {{ name|lower }}
