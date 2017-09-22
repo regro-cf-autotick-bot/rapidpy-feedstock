@@ -1,6 +1,6 @@
 {% set name = "RAPIDpy" %}
-{% set version = "2.5.2" %}
-{% set sha256 = "b24f5245befd45c72829019b9d3026999ac67f020ae2489841abdc507c9efa52" %}
+{% set version = "2.6.0" %}
+{% set sha256 = "39f7ffaf52359105181f40db55720d0dcf428e006650c6ecde5dca7ece1be640" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1 
+  number: 0 
   skip: True   # [win and py3k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -51,7 +51,6 @@ test:
     - RAPIDpy.inflow.CreateInflowFileFromWRFHydroRunoff
     - RAPIDpy.gis
     - RAPIDpy.gis.centroid
-    - RAPIDpy.gis.merge
     - RAPIDpy.gis.muskingum
     - RAPIDpy.gis.network
     - RAPIDpy.gis.taudem
