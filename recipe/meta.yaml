@@ -12,16 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0 
-  skip: True   # [win and py3k]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: {{PYTHON}} setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - python
+    - python>=3.6
     - setuptools
   run:
-    - python
+    - python>=3.6
     - future
     - gdal
     - netcdf4
@@ -79,3 +79,4 @@ about:
 extra:
   recipe-maintainers:
     - snowman2
+    - swainn
